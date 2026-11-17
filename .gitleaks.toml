@@ -1,0 +1,11 @@
+title = "Gitleaks configuration for seo-ranking-skill"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Allow synthetic lockfiles, local sample hashes, and build artifacts ignored by git"
+paths = [
+  '''^frontend/pnpm-lock\.yaml$''',
+  '''^evals/counterfactual-study/manifest\.json$''',
+]
